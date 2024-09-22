@@ -18,7 +18,7 @@ This repository features a project for an email subject line generation tool pow
 ## Project Overview
 This project involves two key components:
 1. **Model Objective**: This model involves identifying the most salient sentences from the email body, and abstracting the message contained in those sentences into only a few words. 
-2. **Gradio Deployment**: The model is deployed using the Gradio API, providing a user-friendly web interface where users can input AI-related questions and get accurate answers.
+2. **Gradio Deployment**: The model is deployed using the Gradio API, providing a user-friendly web interface where users can input Email Body and get accurate respective Subjects for that Email Body.
 
 ## Features
 - **Fine-tuned BART model** for AI-related Email subject line generation tasks.
