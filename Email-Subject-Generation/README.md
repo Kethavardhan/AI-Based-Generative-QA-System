@@ -46,7 +46,7 @@ This project involves two key components:
 
 The training process is performed on Google Colab using a T5 GPU. Follow these steps to fine-tune the BART model:
 
-1. Open the bart_fine_tune_training.ipynb file in Google Colab.
+1. Open the Email_Subject_Generation_using_BART.ipynb file in Google Colab.
 2. Upload your training dataset (ensure it contains email bodies and corresponding subject lines).
 3. Run all the cells to:
   - Install the necessary libraries (transformers, torch, etc.).
@@ -59,13 +59,13 @@ The training process is performed on Google Colab using a T5 GPU. Follow these s
 
 To deploy the fine-tuned model using Gradio for real-time inference:
 
-1. Open the BART_gradio_deployment.ipynb file in Google Colab.
+1. Open the EmailSubGen_Gradio.ipynb file in Google Colab.
 2. Ensure you have the fine-tuned BART model ready for loading.
 3. Run the notebook cells to:
    - Install the necessary libraries.
    - Load the fine-tuned model.
    - Initialize the Gradio API to set up an interactive web-based Email subject line generator interface.
-4. Once deployed, you can interact with the model by inputing AI-related questions through the Gradio interface, and the model will return relevant answers.
+4. Once deployed, you can interact with the model by inputing Email Body through the Gradio interface, and the model will return relevant Subject Line.
 
 **Metrics**:
 
@@ -82,7 +82,6 @@ During the training, metrics such as rouge1, rouge2, rouge_L and meteor_ans  are
    - With a score of 0.1076, this suggests that approximately 11% of the bigrams are shared between the generated and reference subject lines, indicating how well the model captures short multi-word sequences.
 
 3. **ROUGE-L** (`rouge_L_ans: 0.2233`):
-   - ROUGE-L focuses on the longest common subsequence (LCS) between the generated and reference answers.
    - A score of 0.2233 means that around 22% of the longest word sequences from the reference texts are present in the generated subject lines, reflecting the model's ability to maintain content flow.
 
 4. **METEOR** (`meteor_ans: 0.2306`):
@@ -93,7 +92,7 @@ During the training, metrics such as rouge1, rouge2, rouge_L and meteor_ans  are
 - The **ROUGE** scores show that the model captures some degree of word overlap and sequence structure but has room for improvement in capturing multi-word phrases (evidenced by the lower ROUGE-2 score).
 - The **METEOR** score demonstrates that the model balances precision and recall, while also recognizing synonyms and stemming.
 
-These evaluation metrics indicate that the fine-tuned BART model is performing well in generating relevant and contextually appropriate AI-related answers.
+These evaluation metrics indicate that the fine-tuned BART model is performing well in generating relevant and contextually appropriate Email Subjects accordingly.
 
 
 ![Gradio Interface](./assets/Email_subject_line_ex1.jpeg)
