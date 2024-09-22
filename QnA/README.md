@@ -46,7 +46,7 @@ This project involves two key components:
 
 The training process is performed on Google Colab using a T5 GPU. Follow these steps to fine-tune the GPT-2 model:
 
-1. Open the gpt2_fine_tune_training.ipynb file in Google Colab.
+1. Open the QnA.ipynb file in Google Colab.
 2. Upload your training dataset (make sure it contains AI-related Q&A pairs).
 3. Run all the cells to:
    - Install the necessary libraries (transformers, torch, etc.).
@@ -58,7 +58,7 @@ The training process is performed on Google Colab using a T5 GPU. Follow these s
 
 To deploy the fine-tuned model using Gradio for real-time inference:
 
-1. Open the gpt2_gradio_deployment.ipynb file in Google Colab.
+1. Open the QnA_Gradio.ipynb file in Google Colab.
 2. Ensure you have the fine-tuned GPT-2 model ready for loading.
 3. Run the notebook cells to:
    - Install the necessary libraries.
