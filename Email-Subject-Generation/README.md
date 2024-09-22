@@ -71,7 +71,7 @@ To deploy the fine-tuned model using Gradio for real-time inference:
 
 During the training, metrics such as rouge1, rouge2, rouge_L, meteor_ans, and bert_score_f1 are logged. Here’s the snippet of the logged metrics:
 
-![Evaluation Metrics](./assets/metrics-qna.jpg)
+![Evaluation Metrics](./assets/Email_subject_line_metrics.jpeg)
 
 ### Explanation of Metrics
 
